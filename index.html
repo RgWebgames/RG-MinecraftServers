@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glass Header</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+  margin: 0;
+  padding: 0;
+  background: url('https://files.fm/thumb_show.php?i=6nxx9eq3dh') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.glass-header {
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.1); /* ស្រអាប់ */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px) saturate(150%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.glass-header h1 {
+  margin: 0;
+  font-size: 40px;
+  text-aligt: center;
+  left: 100;
+}
+
+.glass-header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.glass-header nav a:hover {
+  color: #00ffe0;
+}
+
+  </style>
+</head>
+<body>
+  <header class="glass-header">
+    <h1>RG Webgames</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Games</a>
+      <a href="#">Apps</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+</body>
+</html>
