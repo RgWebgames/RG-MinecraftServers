@@ -1,1 +1,1 @@
-# RG-MinecraftServers
+# RG-MC
