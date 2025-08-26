@@ -1,66 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Glass Header</title>
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/khmer-os-classic" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/angkor" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/minecraft-pe" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/minecraft-items" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/minecraft-3?styles=41308" rel="stylesheet">
+              
+  <title>Firefoxmc.web</title>
+  
   <style>
   body {
-  margin: 0;
-  padding: 0;
-  background: url('https://files.fm/thumb_show.php?i=6nxx9eq3dh') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.glass-header {
-  width: 100%;
-  padding: 20px 40px;
-  background: rgba(255, 255, 255, 0.1); /* ស្រអាប់ */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px) saturate(150%);
-  -webkit-backdrop-filter: blur(15px) saturate(150%);
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-}
-
-.glass-header h1 {
-  margin: 0;
-  font-size: 40px;
-  text-aligt: center;
-  left: 100;
-}
-
-.glass-header nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.glass-header nav a:hover {
-  color: #00ffe0;
-}
-
+    background: black;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+  }
+  
+  header {
+    gap: 100px;
+    font-size: 25px;
+    border-radius: 12.5px 5px;
+    background: rgba(255, 255, 255, 0.2);   /* ថ្លា */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    top: 800px;
+  }
+  
+  i {
+    color: white;
+    font-size: 70px;
+    margin-right: 60px;
+    text-shadow: 0px 0px 0px lightblue;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.5s ease;
+  }
+  
+  i:active {
+    transform: scale(1.5);
+    border-radius: 0px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .icon-row {
+    gap: 500px;
+  }
+  
+  nav {
+    gap: 100px;
+  }
+  
+  .bxl-telegram {
+    transition:  transform 0.5s ease;
+  }
+  .bxl-telegram:active {
+    text-shadow: 2px 2px 0px black;
+  }
+  
+  .bxl-tiktok {
+    transition:  transform 0.5s ease;
+  }
+  .bxl-tiktok:active {
+    color: black;
+    text-shadow: 1px 1px 0px red;
+  }
+  
+  .bxl-youtube {
+    transition:  transform 0.5s ease;
+  }
+  .bxl-youtube:active {
+    color: red;
+    text-shadow: 2px 2px 0px black;
+  }
+  
+  .bxl-discord {
+    transition:  transform 0.5s ease;
+  }
+  .bxl-discord:active {
+    color: blue;
+    text-shadow: 2px 2px 0px black;
+  }
+  
+  .fa-circle-down {
+    transition: transform 0.5s ease;
+    font-size: 65px;
+  }
+  .fa-circle-down:active {
+    color: black;
+    text-shadow: 1px 1px 0px white;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 45px;
+    text-shadow: 0px 0px 0px none;
+    font-family: 'MINECRAFT PE', sans-sarif;
+  }
+  
+  /*Menu-items*/
+  .menu-items {
+    gap: 200px;
+    font-size: 90px;
+    font-family: 'Minecraft Items', sans-serif;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+    display: inline; /* ធ្វើឲ្យ p ទៅជាជួរដេក */
+    margin-right: 65px; /* គម្លាតចន្លោះ */   
+  }
+  
+  .menu-items:active {
+    transform: scale(1.5);
+    color: white;
+  }
+  
+  /*icon-items*/
+  .icon-items {
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 60px 10px;
+  }
+  
+  /*text-items*/
+  .text-items {
+    color: yellow;
+    user-select: none;
+    font-size: 22.5px;
+    font-family: 'Minecraft', sans-serif;
+    display: inline; /* ធ្វើឲ្យ p ទៅជាជួរដេក */
+    margin-right: 75px; /* គម្លាតចន្លោះ */
+  }
+  
+  /*title*/
+  .title {
+    font-family: 'Minecraft', sans-serif;
+    color: lightblue;
+    font-size: 20px;
+  }
+  
+  .text {
+    font-family: 'Angkor';
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px 35px;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  /*Contact*/
+  .fa-inbox. {
+    font-family: 'Minecraft';
+    color: dodgerblue;
+    font-size: 60px;
+    left: 30px;
+  }
+  
   </style>
+  
 </head>
 <body>
-  <header class="glass-header">
-    <h1>RG Webgames</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Games</a>
-      <a href="#">Apps</a>
-      <a href="#">Contact</a>
-    </nav>
+  <h1 class="pharagrap-title">FIREFOX MC</h1>
+  
+  <header>
+  <nav class="icon-row">
+  <!-- Boxicons -->
+  <a class="icon icon--outline icon--circle is-md brand--telegram" href="https://t.me/@ThavRathMC"><i class="bx bxl-telegram"></i></a>
+  <a class="icon icon--outline icon--circle is-md brand--tiktok"   href="https://tiktok.com/@rathgaming99"><i class="bx bxl-tiktok"></i></a>
+  <a class="icon icon--outline icon--circle is-md brand--youtube"  href="https://youtube.com/@firefoxmc-v2?si=pNFYgdyKB7TIVdJi"><i class="bx bxl-youtube"></i></a>
+  <a class="icon icon--outline icon--circle is-md brand--discord"  href="https://discord.gg/@trathgaming"><i class="bx bxl-discord"></i></a>
+  <a class="icon icon--outline icon--circle is-md"                 href="https://mcpedl.org/minecraft-pe-1-21-100-apk/"><i class="fa-solid fa-circle-down"></i></a>
+</nav>
   </header>
+  
+  <h1 class="title">•------ Click Menu Here ------•</h1>
+  
+  <nav class="icon-items">
+    <!--Menu-Items-->
+    <a style="color: maroon;" class="menu-items" href="https://firefoxmc.vercel.app/#upgrade">u</a>
+    <a style="color: white;" class="menu-items" href="https://firefoxmc.vercel.app/#iron">i</a>
+    <a style="color: aqua;" class="menu-items" href="https://firefoxmc.vercel.app/#diamond">d</a>
+    <a style="color: antiquewhite;" class="menu-items" href="https://t.me/+tbi8gowrVoswNTE9">p</a>
+
+  <nav>
+    <!--Text-Items-->
+    <p class="text-items">Upgrade</p>
+    <p class="text-items">Iron</p>
+    <p class="text-items">Diamond</p>
+    <p class="text-items">Group</p>
+  </nav>
+    <nav class="menu-items">
+      <p class="text">សូមស្វាគមន៍មកកាន់វេបសាយ Firefox MC</p>
+      <a href="https://tiktok.com/@rothna760"><i style="font-size: 35px; text-align: none; color: aqua;" class="fa fa-inbox">•Contact</i></a>
+    </nav>
+  </nav>
+  
+  <a class="text" href="https://rg-mc.vercel.app/">==>ចុចដើម្បីចូលម៉ាញក្រាសហ៍សេវើរ<==</a>
+  
+  <!--script-->
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./script.js"></script>
+  
 </body>
-</html>
+	</html>
+																																								
