@@ -1,1 +1,1 @@
-# RG-MC
+# FireFoxMC-V2
